@@ -1,0 +1,4 @@
+install docker extension in vscode 
+#Dockerfile, Image, Container 
+docker -v
+create Dockerfile
