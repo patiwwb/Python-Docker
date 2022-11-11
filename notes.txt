@@ -1,4 +1,20 @@
 install docker extension in vscode 
 #Dockerfile, Image, Container 
 docker -v
+docker ps 
 create Dockerfile
+FROM python:3.9
+
+ADD main.py
+
+RUN pip install requests beautifulsoup4
+
+CMD ["python","./main.py"]
+
+docker build -t python-imdb .
+docker run python-imdb
+
+docker run -i -t python-imdb
+
+docker build -t python-fastapi .
+docker run -p 80:80 python-fastapi
